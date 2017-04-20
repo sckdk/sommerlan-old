@@ -41,47 +41,22 @@
                         <li><a href="http://sck.dk" target="_blank">sck.dk</a></li>
                 </ul>
             </div>
-        </nav>        
+        </nav>
     </div>
-    
-    <div class="container">
+
+
         <div class="row">
             <div class="video-container">
-                
-                
-                    <div id="player"></div>
-                    <script>      // 2. This code loads the IFrame Player API code asynchronously.
-                          var tag = document.createElement('script');
-                          tag.src = "http://www.youtube.com/player_api";
-                          var firstScriptTag = document.getElementsByTagName('script')[0];
-                          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                    
-                          // 3. This function creates an <iframe> (and YouTube player)
-                          //    after the API code downloads.
-                          var player;
-                          function onYouTubePlayerAPIReady() {
-                            player = new YT.Player('player', {
-                              playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1 },
-                              videoId: 'MvBoKNX_E-c',
-                              events: {
-                                'onReady': onPlayerReady}
-                            });
-                          }
-                    
-                          // 4. The API will call this function when the video player is ready.
-                          function onPlayerReady(event) {
-                            event.target.mute();
-                          }
-                    </script>
-                
+              <video class="responsive-video" autoplay loop muted>
+                <source src="../assets/img/tak-for-sommerlan.mp4" type="video/mp4">
+              </video>
             </div>
         </div>
-        <!--<div class="row">
-            <a href="#tilmelding" class="hide-on-small-only btn btn-large cta deep-orange tabs-wrapper">Tilmeld dig til sommerlan 2016</a>
-        </div>-->
-    </div>
+        <div class="row">
+            <a href="#tilmelding" class="hide-on-small-only btn btn-large cta deep-orange tabs-wrapper">Tilmeld dig til sommerlan 2017</a>
+        </div>
 </header>
-    
+
 <main>
     <section class="intro">
         <div class="container">
@@ -90,7 +65,7 @@
             <!--<a href="#tilmelding" class="btn btn-small deep-orange">Tryk her for at tilmelde dig til sommerlan 2016</a>-->
         </div>
     </section>
-    
+
     <div class="collage">
         <div class="row">
             <div class="col s12 m6 l6">
@@ -111,13 +86,13 @@
 
         </div>
     </div>
-    
+
     <section class="section scrollspy amber lighten-4" id="informationer">
         <div class="container">
             <h2>Informationer</h2>
         </div>
     </section>
-    
+
     <section class="secction scrollspy amber lighten-5">
         <div class="container">
             <div class="row">
@@ -127,46 +102,46 @@
             <div class="row">
                 <div id="map"></div>
             </div>
-            
+
             <div class="row">
                 <h4 class="editable section scrollspy" id="regler">Regler</h4>
                 <p class="flow-text editable"><strong>Tilmelding til LAN.</strong><br />2 enheder pr. plads. (<strong>Maksimalt &eacute;n station&aelig;r enhed, alts&aring; maks &eacute;n station&aelig;r computer eller en konsol</strong>)<br />Hvis du er under 18 &aring;r, forventer vi at dine for&aelig;ldre er indforst&aring;et med, at du deltager, og at de er indforst&aring;et med vores vedt&aelig;gter og regels&aelig;t.<br />Hvis du er under 12 &aring;r, forventer vi at du har en ledsager med, som kan hj&aelig;lpe med det mest basale.<br />Mad, sove, spil og computerproblemer.<br />&nbsp;<strong><br />Deling og brug af filer til LAN.</strong><br />Deling over netv&aelig;rket uden password beskyttelse er ikke tilladt.<br />Vi tager l&oslash;bende stikpr&oslash;ver.<br />&nbsp;<br /><strong>G&aelig;ster til LAN.</strong><br />Hvis du ikke deltager i partyet (alts&aring; har en pc med og har en betalt plads), betragtes du som v&aelig;rende g&aelig;st.<br />G&aelig;ster kan ikke deltage i konkurrencer og m&aring; ikke overnatte, hvis g&aelig;ster er til gene for deltagere kan de bortvises af Crew.<br />G&aelig;ster er velkommen i tidsrummet 12:00 til 21:00, hvor man har pligt at til orientere Crew, at man er p&aring; bes&oslash;g. I s&aelig;rlige tilf&aelig;lde kan Crew give tilladelse til at g&aelig;ster bliver l&aelig;ngere.<br />&nbsp;<br /><strong>Bortvisnings grund.</strong><br />Indtagelse/p&aring;virkning af alkohol/euforiserende stoffer til LAN er forbudt.<br />Rygning foreg&aring;r udenfor og skodder smides i askeb&aelig;rene.<br />Skiftning af spil i konsolomr&aring;det foretages udelukkende af crew.<br />Du har selv ansvaret for dine ting, SCK kan ikke d&aelig;kke skader/tyveri.<br />Tyveri vil blive anmeldt, og for&aelig;ldre vil blive kontaktet hvis deltageren er under 18 &aring;r.<br />Hold et fornuftigt niveau p&aring; dine h&oslash;jtalere, tag evt. et par &oslash;reb&oslash;ffer med.<br />Mobning, sl&aring;skampe, l&oslash;b og uterlig opf&oslash;rsel tolereres ikke.<br />Pornografi som f.eks. billeder, film eller deslige accepteres ikke, uanset om det er deling eller fremvisning p&aring; egen computer.</p>
             </div>
-            
+
             <div class="row">
                 <h4 class="editable section scrollspy" id="huskelisten">Huskelisten</h4>
                 <p class="flow-text editable">PC - Sk&aelig;rm - mus - tastatur - Str&oslash;mkabler - Musem&aring;tte - &Oslash;reb&oslash;ffer - mobillader.<br />Noget at sove p&aring; og i. (IKKE EN DOBBELTMADRAS!!)<br />Penge til mad og snacks.<br />H&aring;ndkl&aelig;de - s&aelig;be - badet&oslash;j - ekstra t&oslash;j.<br />&nbsp;<br />Ting du ikke skal have med: (For det har vi)<br />Netv&aelig;rkskabel - Stikd&aring;se - Kaffemaskine - K&oslash;leskab - Elkedel.</p>
             </div>
-            
+
             <div class="row">
-                
+
                 <div class="col s12 m6 l4">
                     <img class="z-depth-2" src="assets/img/faciliteter.png" />
                 </div>
-                
+
                 <div class="col s12 m6 l8">
                     <h4 class="editable section scrollspy" id="faciliteter">Vores faciliteter</h4>
                     <p class="flow-text editable">
     Vi har 128 pladser og de sælges efter "først til mølle" princippet.
     Samtidigt har vi en lille kiosk, hvor man kan købe chips og sodavand.
-    Har man selv noget med, har vi også et køleskab som man kan benytte. 
+    Har man selv noget med, har vi også et køleskab som man kan benytte.
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </section>
-    
+
     <section class="amber lighten-4 hide-on-small-only">
         <div class="container">
             <h2 class="editable">Årets Crew</h2>
         </div>
     </section>
-    
+
     <section class="section scrollspy  amber lighten-5 hide-on-small-only" id="crew">
         <div class="container">
             <div class="row">
-                
+
                 <div class="carousel">
                     <a class="carousel-item z-depth-1" href="#one!"><img src="assets/img/kim.jpg" />
                         <div class="carouselDesc">
@@ -223,7 +198,7 @@
                         </div>
                     </a>-->
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -233,11 +208,11 @@
             <h2 class="editable">Tilmelding</h2>
         </div>
     </section>
-    
+
     <section class="section scrollspy amber lighten-5" id="signup">
         <div class="container">
             <h4 class="editable">Pris</h4>
-            <p class="editable flow-text"><i>En plads til LAN koster 400,- (earlybird)</i><br />Er pladsen betalt og &oslash;nsker man at framelde sig, skal det g&oslash;res inden d 1 juli. kl 18, ellers kan man ikke f&aring; sine penge tilbage. Gebyret kan man ikke f&aring; retur.<br />Vi har en madaftale hvor man kan f&aring; aftensmad alle dagene for 350,- &oslash;nsker man dette skal man bare tilv&aelig;lge det n&aring;r man booker sin plads. Husk at sidste chance for at booke aftensmed med sin plads, er d. 3 juli.</p>     
+            <p class="editable flow-text"><i>En plads til LAN koster 400,- (earlybird)</i><br />Er pladsen betalt og &oslash;nsker man at framelde sig, skal det g&oslash;res inden d 1 juli. kl 18, ellers kan man ikke f&aring; sine penge tilbage. Gebyret kan man ikke f&aring; retur.<br />Vi har en madaftale hvor man kan f&aring; aftensmad alle dagene for 350,- &oslash;nsker man dette skal man bare tilv&aelig;lge det n&aring;r man booker sin plads. Husk at sidste chance for at booke aftensmed med sin plads, er d. 3 juli.</p>
         </div>
     </section>
     <section>
@@ -248,9 +223,9 @@
             </div>
         </div>
     </section>
-    
+
 </main>
-    
+
 <footer>
     <div class="container">
         <div class="row">
@@ -302,27 +277,27 @@
         </div>
     </div>
 </footer>
-    
+
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){ 
+$(document).ready(function(){
     $('.button-collapse').sideNav({
         menuWidth: 240,
             edge: 'left'
         }
     );
-    
+
     $('.scrollspy').scrollSpy();
-    
+
     $('.carousel').carousel();
-    
+
     $("#indsend").click(function(event){
         Materialize.toast('Tak for din besked, vi svare tilbage hurtigst muligt', 4000);
     });
-    
+
 });
 </script>
 <script type="text/javascript">
@@ -339,12 +314,12 @@ $(document).ready(function(){
             // The latitude and longitude to center the map (always required)
             center: new google.maps.LatLng(56.002713, 8.6014956), // Amagerskole skjern
 
-            // How you would like to style the map. 
+            // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
             styles: [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}]
         };
 
-        // Get the HTML DOM element that will contain your map 
+        // Get the HTML DOM element that will contain your map
         // We are using a div with id="map" seen below in the <body>
         var mapElement = document.getElementById('map');
 

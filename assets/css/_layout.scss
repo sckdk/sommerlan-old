@@ -5,12 +5,12 @@ html, body {
 
 header {
     height: 100vh;
-    
+
     @media all and (max-width: 992px) {
         min-height: 50vh;
         height: auto;
     }
-    
+
     nav {
         .brand-logo {
             img {
@@ -34,12 +34,29 @@ header {
              color: #000;
         }
     }
-    
+
     .cta {
         position: relative;
         margin: -200px 0 0 0;
     }
-    
+
+    video {
+        width:100%;
+        object-fit: cover;
+    }
+    .responsive-video {
+      position:fixed;
+      top:-10vh;
+    }
+    .vid-overlay {
+      position:fixed;width:100%;
+      height:200vh;
+      background-color:#000;
+      top:-10vh;
+      background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC);
+      background-color: rgba(0,0,0,0.6);
+    }
+
 }
 
 main {
@@ -53,44 +70,44 @@ main {
             margin: 5vh 0;
         }
     }
-    
+
     .intro {
         padding: 0 0 15vh 0;
     }
-    
+
     .collage {
         margin: 0; padding:0;
         .row, .col {
             margin:-6px 0 0 0;padding:0;
         }
     }
-    
+
     #informationer {
         margin-top: -6px;
     }
-    
+
     .carousel {
         height: 830px;
         margin-top: -10vh;
         @media only screen and (max-width : 400px){
             height: 530px;
         }
-        
+
         .carousel-item {
             background-color: #fff;
             color: #000;
-            width: 400px;   
+            width: 400px;
             @media only screen and (max-width : 600px){
                 width: 80vw;
             }
-            
+
             .carouselDesc {
                 padding: 0 8px;
-                
+
                 h4 {
                     font-size: 1.5em;
                 }
-                
+
                 button {
                     background:none;
                     border:none;
@@ -98,7 +115,7 @@ main {
                     transition: all 0.2s;
                     padding:8px 11px;
                     font-size: 1.5em;
-                
+
                     &:hover {
                         color:#03a9f4;
                     }
@@ -118,7 +135,7 @@ main {
             }
         }
     }
-    
+
 }
 
 footer {
@@ -127,16 +144,16 @@ footer {
     min-height: 30vh;
     background-color: #192024;
     font-family: 'oswald', sans-serif;
-    
+
     @media only screen and (max-width : 600px) {
         margin-top: 20vh;
     }
-    
+
     h3 {
         color: #eceff1;
         font-size: 1em;
     }
-    
+
     a {
         color: #78909c;
         font-size: 0.8em;
@@ -145,11 +162,11 @@ footer {
             color: #eceff1;
         }
     }
-    
+
     .copyright {
         color: #455a64;
         margin: 25px 0;
-        
+
         hr {
             margin: 25px 0;
             border: 0;
@@ -157,13 +174,13 @@ footer {
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
-        
+
         h1 {
             font-size: 1em;
             margin: 0;
             display: inline;
         }
-        
+
         a {
             color: #455a64;
             font-size: 1em;
@@ -172,7 +189,7 @@ footer {
             }
         }
     }
-    
+
     .row {
         margin-bottom: 0;
     }
