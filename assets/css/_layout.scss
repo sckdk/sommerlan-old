@@ -4,12 +4,6 @@ html, body {
 
 
 header {
-    height: 100vh;
-
-    @media all and (max-width: 992px) {
-        min-height: 50vh;
-        height: auto;
-    }
 
     nav {
         .brand-logo {
@@ -35,30 +29,47 @@ header {
         }
     }
 
-    .cta {
-        position: relative;
-        margin: -200px 0 0 0;
-    }
+}
 
-    video {
-        width:100%;
-        object-fit: cover;
-    }
 
-    .vid-overlay {
-      position:fixed;width:100%;
-      height:200vh;
-      background-color:#000;
-      top:-10vh;
-      background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC);
-      background-color: rgba(0,0,0,0.6);
+.video-container {
+    position:fixed;
+    z-index:-99999;
+    top: -10vw;
+    width:100%;
+    max-width: 100%;
+    @media only screen and (max-width : 600px) {
+        top: 0;
     }
+}
+video {
+    width:100%;
+    object-fit: cover;
+}
 
+.vid-overlay {
+z-index:-9999;position: fixed; width: 100%; height: 200vh; background-color: #000; top: -10vh; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC);
 }
 
 main {
+    margin-top: 30vw;
+    background-color:#fff;
+    @media only screen and (max-width : 600px) {
+        margin-top: 33vw;
+    }
     h2,h3,h4,h5 {font-family: 'oswald', sans-serif;}
     h4 {color: #304458;}
+
+
+    .cta {
+        font-family: 'oswald', sans-serif;
+        width:100%;
+        margin:-3vh 0 0 0;
+        @media only screen and (max-width : 600px) {
+            margin:5vh 0 0 0;
+        }
+    }
+
     section {
         padding: 3vh 0;
         #map {
@@ -69,7 +80,7 @@ main {
     }
 
     .intro {
-        padding: 0 0 15vh 0;
+        padding: 10vh 0 10vh 0;
     }
 
     .collage {
@@ -142,9 +153,7 @@ footer {
     background-color: #192024;
     font-family: 'oswald', sans-serif;
 
-    @media only screen and (max-width : 600px) {
-        margin-top: 20vh;
-    }
+
 
     h3 {
         color: #eceff1;
